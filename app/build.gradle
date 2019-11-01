@@ -42,6 +42,8 @@ dependencies {
 
     implementation 'com.plaid.link:sdk-core:0.2.0'
     implementation 'com.android.volley:volley:1.1.1'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
