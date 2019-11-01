@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.plaid.splitnotandroid"
-  android:targetSandboxVersion="1">
+  package="com.plaid.splitnotandroid">
 
   <uses-permission android:name="android.permission.INTERNET" />
 
