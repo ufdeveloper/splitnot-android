@@ -27,7 +27,7 @@ import java.util.ArrayList;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainJavaActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
   private static final int LINK_REQUEST_CODE = 1;
   private TextView contentTextView;
@@ -35,7 +35,7 @@ public class MainJavaActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main_java);
+    setContentView(R.layout.activity_main);
     Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     contentTextView = findViewById(R.id.content);
@@ -49,7 +49,7 @@ public class MainJavaActivity extends AppCompatActivity {
       ArrayList<PlaidProduct> products = new ArrayList<>();
       products.add(PlaidProduct.TRANSACTIONS);
       Plaid.openLink(
-          MainJavaActivity.this,
+          MainActivity.this,
           new LinkConfiguration.Builder("Test App", products).build(),
           LINK_REQUEST_CODE);
     });
