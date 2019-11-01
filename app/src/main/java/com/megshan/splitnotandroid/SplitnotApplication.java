@@ -1,4 +1,4 @@
-package com.plaid.linksample;
+package com.megshan.splitnotandroid;
 
 import android.app.Application;
 
@@ -8,7 +8,7 @@ import com.plaid.linkbase.models.PlaidOptions;
 import com.plaid.linkbase.models.PlaidEnvironment;
 import com.plaid.plog.LogLevel;
 
-public class LinkSampleApplication extends Application {
+public class SplitnotApplication extends Application {
 
   @Override
   public void onCreate() {

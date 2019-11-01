@@ -1,8 +1,10 @@
-package com.plaid.linksample;
+package com.megshan.splitnotandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.plaid.splitnotandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 

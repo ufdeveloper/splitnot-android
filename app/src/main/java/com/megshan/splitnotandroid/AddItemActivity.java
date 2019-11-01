@@ -1,4 +1,4 @@
-package com.plaid.linksample;
+package com.megshan.splitnotandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +26,7 @@ import kotlin.Unit;
 import java.util.ArrayList;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.plaid.splitnotandroid.R;
 
 public class AddItemActivity extends AppCompatActivity {
 
@@ -35,7 +36,7 @@ public class AddItemActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_add_item);
     Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     contentTextView = findViewById(R.id.content);

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_add_item"
-    tools:context=".MainActivity">
+    tools:context="com.megshan.splitnotandroid.MainActivity">
 
   <TextView
       android:id="@+id/content"

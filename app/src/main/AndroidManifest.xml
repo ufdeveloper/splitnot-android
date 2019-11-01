@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.plaid.linksample">
+  package="com.plaid.splitnotandroid">
 
   <uses-permission android:name="android.permission.INTERNET" />
 
   <application
-    android:name=".LinkSampleApplication"
+    android:name="com.megshan.splitnotandroid.SplitnotApplication"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
@@ -14,7 +14,7 @@
     android:theme="@style/AppTheme">
 
     <activity
-      android:name=".MainActivity"
+      android:name="com.megshan.splitnotandroid.MainActivity"
       android:label="@string/title_activity_main"
       android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
