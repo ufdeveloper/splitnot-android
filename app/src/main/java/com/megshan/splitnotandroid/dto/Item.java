@@ -7,4 +7,5 @@ public class Item {
     private String userKey;
     private String itemId;
     private String itemName;
+    private String publicToken;
 }

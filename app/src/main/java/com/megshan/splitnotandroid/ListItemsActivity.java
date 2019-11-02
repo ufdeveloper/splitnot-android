@@ -129,9 +129,15 @@ public class ListItemsActivity extends AppCompatActivity {
                     newItem.setUserKey("123");
                     newItem.setItemName(metadata.getInstitutionName() + " "
                             +  metadata.getAccounts().get(0).getAccountName());
+                    newItem.setPublicToken(item.getPublicToken());
 
                     // add new item to list and update the list
                     itemList.add(newItem);
+                    if(itemsAdapter == null) {
+                        itemsAdapter = new ItemsAdapter(itemList);
+                        recyclerView.setAdapter(itemsAdapter);
+                        itemsEmptyView.setVisibility(View.INVISIBLE);
+                    }
                     itemsAdapter.notifyItemInserted(itemList.size()-1);
 
                     // Save item to DB
