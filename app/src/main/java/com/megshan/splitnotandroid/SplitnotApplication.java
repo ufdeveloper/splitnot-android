@@ -15,7 +15,7 @@ public class SplitnotApplication extends Application {
     super.onCreate();
 
     PlaidOptions plaidOptions = new PlaidOptions.Builder()
-        .environment(PlaidEnvironment.SANDBOX)
+        .environment(PlaidEnvironment.DEVELOPMENT)
         .logLevel(BuildConfig.DEBUG ? LogLevel.DEBUG : LogLevel.ASSERT)
         .build();
 
