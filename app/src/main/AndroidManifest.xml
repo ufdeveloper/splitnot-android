@@ -16,17 +16,17 @@
         <activity android:name="com.megshan.splitnotandroid.ListItemsActivity"
             android:label="@string/title_activity_list_items"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.megshan.splitnotandroid.TransactionsActivity"
+            android:label="@string/title_activity_transactions"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.megshan.splitnotandroid.TransactionsActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name="com.plaid.link.LinkActivity" /> <!-- <provider -->
         <!-- android:name="com.plaid.link.PlaidContentProvider" -->

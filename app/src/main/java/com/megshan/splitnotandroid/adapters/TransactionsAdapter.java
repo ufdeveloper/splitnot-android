@@ -6,10 +6,13 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.megshan.splitnotandroid.dto.Transaction;
 import com.plaid.splitnotandroid.R;
 
+import java.util.List;
+
 public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapter.MyViewHolder> {
-    private String[] mDataset;
+    private List<Transaction> mDataset;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -24,7 +27,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public TransactionsAdapter(String[] myDataset) {
+    public TransactionsAdapter(List<Transaction> myDataset) {
         mDataset = myDataset;
     }
 
@@ -45,13 +48,12 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
     public void onBindViewHolder(MyViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.textView.setText(mDataset[position]);
-
+        holder.textView.setText(mDataset.get(position).getName());
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mDataset.size();
     }
 }

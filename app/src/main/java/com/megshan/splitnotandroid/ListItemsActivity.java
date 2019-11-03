@@ -68,6 +68,7 @@ public class ListItemsActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
+        // Link add account button
         fab = findViewById(R.id.open_link_fab);
         fab.setOnClickListener(view -> {
             Plaid.setLinkEventListener(new LinkEventListener(it -> {
@@ -78,7 +79,7 @@ public class ListItemsActivity extends AppCompatActivity {
             products.add(PlaidProduct.TRANSACTIONS);
             Plaid.openLink(
                     ListItemsActivity.this,
-                    new LinkConfiguration.Builder("Test App", products).build(),
+                    new LinkConfiguration.Builder("Splitnot", products).build(),
                     LINK_REQUEST_CODE);
         });
 
