@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name="com.megshan.splitnotandroid.AddTransactionToSplitwiseActivity"></activity>
         <activity
             android:name="com.megshan.splitnotandroid.TransactionsActivity"
             android:label="@string/title_activity_transactions"
@@ -24,10 +25,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.megshan.splitnotandroid.ListItemsActivity"
+        <activity
+            android:name="com.megshan.splitnotandroid.ListItemsActivity"
             android:label="@string/title_activity_list_items"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="com.megshan.splitnotandroid.TransactionsActivity">
+            android:parentActivityName="com.megshan.splitnotandroid.TransactionsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.megshan.splitnotandroid.SplitwiseAuthorizeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="futurestudio" />
+            </intent-filter>
         </activity>
         <activity android:name="com.plaid.link.LinkActivity" /> <!-- <provider -->
         <!-- android:name="com.plaid.link.PlaidContentProvider" -->

@@ -67,7 +67,7 @@ public class TransactionsActivity extends AppCompatActivity {
                                 transactionsEmptyView = findViewById(R.id.transactions_empty_view);
                                 transactionsEmptyView.setVisibility(View.VISIBLE);
                             } else {
-                                transactionsAdapter = new TransactionsAdapter(transactionList);
+                                transactionsAdapter = new TransactionsAdapter(transactionList, this);
                                 recyclerView.setAdapter(transactionsAdapter);
                             }
                         }),
@@ -97,12 +97,16 @@ public class TransactionsActivity extends AppCompatActivity {
     @SuppressWarnings("SwitchStatementWithTooFewBranches")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent;
         switch (item.getItemId()) {
             case R.id.accounts:
-                Intent intent = new Intent(this, ListItemsActivity.class);
+                intent = new Intent(this, ListItemsActivity.class);
 //                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 return true;
+            case R.id.splitwise_authorize:
+                intent = new Intent(this, SplitwiseAuthorizeActivity.class);
+                startActivity(intent);
             default:
                 return super.onOptionsItemSelected(item);
         }

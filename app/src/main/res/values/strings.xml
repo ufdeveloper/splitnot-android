@@ -10,4 +10,6 @@
     <string name="content_exception">Exception Class:\n%1$s\n\n Exception Message:\n%2$s</string>
     <string name="show_java">Show Java</string>
     <string name="accounts">Accounts</string>
+    <string name="splitwiseauthorize">Authorize Splitwise</string>
+    <string name="posttosplitwise">Post to Splitwise</string>
 </resources>
